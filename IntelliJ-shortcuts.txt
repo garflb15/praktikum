@@ -4,3 +4,7 @@ ALT+F7     -> um nach Stichworten zu suchen
 STRG+Q     -> um die Dokumentation einer Klasse einzusehen
 Shift+F6   -> um etwas um zu benennen
 STRG+ALT+T -> catch exception
+
+
+oil
+ac4oil!

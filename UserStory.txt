@@ -1,0 +1,24 @@
+Description
+
+Currently OIL can deal with fixed target-urls configured in OIL.provisioning_interfaces table only. The part after the interface key is simple ignored by the ProxyController. E.g. oil.ondaily-trunk12c.infonova.at:8087/oil/proxy/IAP_PROVISIONING/myApiPath: /myApiPath here will not be send to the target system and is ignored.
+
+The goal of this US is that the API path part will not be ignored for sync interfaces and send to the target system. Additionally the API path and request + response should be visible in the OIL UI.
+
+Technical Details
+
+Use a new git branch derived from master - OPENNET-6597_rest_oil_sync
+
+
+
+
+DB - Important tables
+
+select * from OIL.SERVICE_REQUESTS;
+
+select * from OIL.SERVICE_REQUEST_PARAMETERS;
+
+select * from OIL.REQUEST_RESULTS;
+
+Acceptance
+
+OIL can handle GET/PUT/etc. requests for sync interfaces
